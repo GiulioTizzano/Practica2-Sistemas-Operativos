@@ -1,0 +1,67 @@
+// #include <stdio.h>
+// #include <sys/types.h>
+// #include <stdlib.h>
+// #include <signal.h>
+// #include <unistd.h>
+// #include <wait.h>
+// // Junto con los archivos hay una foto dónde se explica el algoritmo
+// // programado para los procesos de la jerarquía que pedía el enunciado
+// void main(void) {
+//     //pid_t pid;
+//     //pid = fork();
+//     int rt;
+//     int rt_dos;
+//     for(int i = 0; i < 5; i++) {
+//         rt = fork();
+
+//         if(rt == 0) {
+//             printf("\n Soy el proceso de %d y mi padre es %d", getpid(), getppid());
+//             if(i == 0 || i == 1) {
+//             // printf("\n Soy el proceso %d y mi padre es %d", getpid(), getppid());
+//             break;
+//             } else if(i == 3 || i == 4) {
+//                 rt_dos = fork();
+
+//                 if(rt_dos == 0) {
+//                     printf("\n Soy el proceso %d y mi padre es %d", getpid(), getppid());
+//                     break;
+//                 }
+
+//             } 
+
+//             // else if(i == 3 || i == 4) {
+//             //     for(int j = 0; j < 2; j++) {
+//             //         if(rt_dos == 0) {
+//             //             rt_dos = fork();
+//             //             printf("\n Soy el proceso %d y mi padre es %d", getpid(), getppid());
+//             //         }
+//             //     }
+//             // }
+//             break;
+//         } 
+
+//         // if(i == 2) {
+//         //     for(int j = 0; j < 2; j++) {
+//         //         fork();
+//         //         printf("\n Soy el proceso %d y mi padre es %d", getpid(), getppid());
+//         //     }
+//         // }
+//     }
+//     // La función wait() sirve para esperar a que todos los procesos hijos terminen su ejecución.
+//     while(wait(NULL) > 0);
+// }
+
+
+
+
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
+#include <wait.h>
+
+void main(void) {
+    
+}
